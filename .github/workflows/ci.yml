@@ -1,0 +1,10 @@
+name: CI
+on:
+  push:
+  workflow_dispatch:
+jobs:
+  j1:
+    environment: NeedsApproval
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo j1 s1
